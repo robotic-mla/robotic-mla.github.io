@@ -308,8 +308,25 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Vision-language-action models (VLAs) have shown generalization capabilities in robotic manipulation tasks by inheriting from vision-language models (VLMs) and learning action generation. Most VLA models focus on interpreting vision and language to generate actions, whereas robots must perceive and interact within the spatial-physical world. This gap highlights the need for a comprehensive understanding of robotic-specific multisensory information, which is crucial for achieving complex and contact-rich control. To this end, we introduce a multisensory language–action (MLA) model that collaboratively perceives heterogeneous sensory modalities and predicts future multisensory objectives to facilitate physical world modeling. Specifically, to enhance perceptual representations, we propose an encoder-free multimodal alignment scheme that innovatively repurposes the large language model itself as a perception module, directly interpreting multimodal cues by aligning 2D images, 3D point clouds, and tactile tokens through positional correspondence. To further enhance MLA's understanding of physical dynamics, we design a future multisensory generation post-training strategy that enables MLA to reason about semantic, geometric, and interaction information, providing more robust conditions for action generation. For evaluation, the MLA model outperforms the previous state-of-the-art 2D and 3D VLA methods by 12% and 24% in complex, contact-rich real-world tasks, respectively, while also demonstrating improved generalization to unseen configurations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
     <div class="hero-body">
       <h2 class="title is-3">Real-world Setup</h2>
       
@@ -320,7 +337,7 @@
           For single-arm tasks, we employ a Franka Research 3 robotic arm equipped with a ROBOTIQ adaptive gripper as the end-effector. Visual observations are provided by two Intel RealSense D455 cameras, one positioned at a right-front third-person viewpoint and the other mounted on the wrist. In addition, two Tashan TS-E-A tactile sensors are attached to the fingertips of the gripper to capture tactile feedback. For dual-arm tasks, we utilize two parallel Franka Emika arms with the same end-effector configuration. The observation setup includes an additional front-facing RealSense D455 camera along with two wrist-mounted cameras, ensuring comprehensive multi-view perception.
         </p>
       </div>
-      
+      </div>
     </div>
   </div>
 </section>
@@ -328,6 +345,7 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
     <div class="hero-body">
       <h2 class="title is-3">Real-world Experiments</h2>
       
@@ -338,7 +356,7 @@
           To systematically evaluate our model, we design six complex, contact-rich real-world robotic experiments covering both single- and dual-arm manipulation tasks, where MLA achieves state-of-the-art success rates and demonstrates strong generalization to unseen objects and backgrounds.
         </p>
       </div>
-      
+      </div>
     </div>
   </div>
 </section>
@@ -346,6 +364,7 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
     <div class="hero-body">
       <h2 class="title is-3">RLBench Experiments</h2>
       
@@ -356,7 +375,7 @@
           For reproducibility, we further evaluate MLA on the RLBench simulator and also obtain competitive performance.
         </p>
       </div>
-      
+      </div>
     </div>
   </div>
 </section>
